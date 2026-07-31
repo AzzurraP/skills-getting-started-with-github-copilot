@@ -94,14 +94,40 @@ section h3 {
   margin: 0;
 }
 
-.participants-section li {
-  padding: 4px 0;
+.participant-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
   color: #355070;
   border-bottom: 1px solid #dce7ff;
 }
 
-.participants-section li:last-child {
+.participant-row:last-child {
   border-bottom: none;
+}
+
+.participant-email {
+  word-break: break-word;
+}
+
+.delete-participant {
+  background: #e11d48;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-participant:hover {
+  background: #be123c;
 }
 
 .participants-section .empty {
